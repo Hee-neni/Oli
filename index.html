@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1>Countdown Timer</h1>
+    <div id="timer"></div>
+    <script>
+        // JavaScript code for the countdown timer
+        function updateTimer() {
+            const targetDate = new Date("2023-09-29T08:16:00+02:00"); // Berlin Time
+            const currentDate = new Date();
+            const timeDifference = targetDate - currentDate;
+
+            if (timeDifference <= 0) {
+                document.getElementById("timer").innerHTML = "Countdown expired!";
+            } else {
+                const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+                document.getElementById("timer").innerHTML = `
+                    ${days}d ${hours}h ${minutes}m ${seconds}s
+                `;
+
+                setTimeout(updateTimer, 1000); // Update the timer every second
+            }
+        }
+
+        updateTimer(); // Initial call to start the countdown
+    </script>
+</body>
+</html>
