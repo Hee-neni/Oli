@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Timer</title>
-    <style>
-                body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        #timer {
-            font-size: 36px;
-            color: #ff5722;
-        }
-    </style>
+    <title>à bientôt</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Countdown Timer</h1>
-    <div id="timer"></div>
+    <div class="container">
+	
+        <div class = "text">
+            <h3> What will the verdict be... </h2>
+            <h1 id="timer"></h1>    
+        </div>
+
+        <div class="bird-container bird-container--one">
+            <div class="bird bird--one"></div>
+        </div>
+        
+        <div class="bird-container bird-container--two">
+            <div class="bird bird--two"></div>
+        </div>
+        
+        <div class="bird-container bird-container--three">
+            <div class="bird bird--three"></div>
+        </div>
+        
+        <div class="bird-container bird-container--four">
+            <div class="bird bird--four"></div>
+        </div>
+        
+    </div>
+    
+   
     <script>
         function updateTimer() {
             const targetDate = new Date("2023-09-29T08:16:00+02:00");
@@ -30,7 +40,7 @@
             const timeDifference = targetDate - currentDate;
 
             if (timeDifference <= 0) {
-                document.getElementById("timer").innerHTML = "Countdown expired!";
+                document.getElementById("timer").innerHTML = "Jour J!";
             } else {
                 const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -41,11 +51,11 @@
                     ${days}d ${hours}h ${minutes}m ${seconds}s
                 `;
 
-                setTimeout(updateTimer, 1000); 
+                setTimeout(updateTimer, 1000);
             }
         }
-        
-        updateTimer(); 
+
+        updateTimer();
     </script>
 </body>
 </html>
