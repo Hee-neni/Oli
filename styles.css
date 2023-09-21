@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Tangerine&display=swap');
 
+@media (max-width: 480px) {
+    body {
+        background-image: none; 
+    }
+
+    .text {
+        font-size: 2rem;
+    }
+
 body {
     background-image: linear-gradient(to bottom, rgba(255, 168, 76, 0.6) 0%, rgba(255, 123, 13, 0.6) 100%), url('bamberg.jpg');
     background-size: cover; 
