@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Tangerine&display=swap');
 
 @media (max-width: 768px) {
     .text {
@@ -10,7 +10,6 @@ body {
     background-image: linear-gradient(to bottom, rgba(255, 168, 76, 0.6) 0%, rgba(255, 123, 13, 0.6) 100%), url('bamberg.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-attachment: fixed;
     position: fixed; 
     top: 0;
     right: 0;
@@ -29,22 +28,32 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 75%;
-    left: 25%;
+    top: 5%;
+    right: 5%;
     transform: translate(0%, 0%); /* Center horizontally and vertically */
     padding: 1%; /* Adjust the padding as a percentage for responsive sizing */
-    /* background-color: rgba(255, 255, 255, 0.7); Translucent white background */
-    /* border-radius: 15px; /* Rounded corners */
+    /*background-color: rgba(255, 255, 255, 0.7); /* Translucent white background */
+   /* border-radius: 15px; /* Rounded corners */
     text-align: center; /* Center the text horizontally */
     color: black; /* Text color */
     max-width: 80%; /* Limit the maximum width of the container */
     box-sizing: border-box; /* Include padding in width calculation */
 }
 
+.text h3 {
+    font-family: 'Homemade apple';
+	font-size: 2rem;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+	margin: 0;
+}
 
-/*#timer {
-    color: #ff5722;
-}*/
+#timer {
+    font-family: 'Homemade apple';
+    font-size: 3rem;
+	letter-spacing: -3px;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+	margin: 0;
+}
 
 *,
 *::before,
