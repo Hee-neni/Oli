@@ -28,7 +28,7 @@ body {
     transform: translate(0%, 0%); /* Center horizontally and vertically */
     padding: 1%; /* Adjust the padding as a percentage for responsive sizing */
     text-align: center; /* Center the text horizontally */
-    color: white; /* Text color */
+    color: black; /* Text color */
     max-width: 80%; /* Limit the maximum width of the container */
     box-sizing: border-box; /* Include padding in width calculation */
 }
