@@ -30,7 +30,7 @@ body {
     /*background-color: rgba(255, 255, 255, 0.7); /* Translucent white background */
    /* border-radius: 15px; /* Rounded corners */
     text-align: center; /* Center the text horizontally */
-    color: black; /* Text color */
+    color: white; /* Text color */
     max-width: 80%; /* Limit the maximum width of the container */
     box-sizing: border-box; /* Include padding in width calculation */
 }
